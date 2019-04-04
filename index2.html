@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Agency - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/agenci.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+     
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Film</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Welcome To Our Studio!</div>
+        <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="index.html">Home</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Music</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <center>
+           <div style="text-align:center">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button ondblclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="420">
+            <source src="dna.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+        </video>
+        </div>
+
+        <script>
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
+        }
+        function makeBig() {
+            myVideo.width=560;
+        }
+        function makeSmall() {
+            myVideo.width=320;
+        }
+        function makeNormal() {
+            myVideo.width=420;
+        }
+        </script>
+         <p><a href="lagu.html" target="_blank">PLAYLIST</a>.</p>
+    
+        </div>
+        </center>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <!-- Portfolio Grid -->
+  <section class="bg-light" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Film </h2>
+          <h3 class="section-subheading text-muted">Beberapa film recomended yang pernah saya tonton </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/fivefeetapart1.jpg" alt="" width="100%">
+          </a>
+          <div class="portfolio-caption">
+            <a href="youtube autoplay.html"><h4>five feet apart</h4></a>
+            <p class="text-muted">Romantis</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/cektokosebelah1.jpg" alt="" width="100%">
+          </a>
+          <div class="portfolio-caption">
+           <a href="youtube controls.html"><h4>Cek Toko sebelah</h4></a>
+            <p class="text-muted">Komedi</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/traintobusan1.jpg" alt="" width="100%" height="0.5px">
+          </a>
+          <div class="portfolio-caption">
+            <a href="youtube loop.html"><h4>Train to Busan</h4></a>
+            <p class="text-muted">Horor</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/harrypoter1.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <a href="youtube-using embed.html"><h4>Harry Poter</h4></a>
+            <p class="text-muted">Fantacy</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/dilan1.jpg"alt="">
+          </a>
+          <div class="portfolio-caption">
+            <a href="youtube-using object.html"><h4>Dilan 1990</h4></a>
+            <p class="text-muted">Romantis</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/Miracle7.jpg" alt="" width="100%">
+          </a>
+          <div class="portfolio-caption">
+            <a href="playing a youtube video in HTML.html"><h4>Miracle in cell no 7 </h4></a>
+            <p class="text-muted">Drama, Komedi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</center>
+  </section>
+ 
+ 
+
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Your Website 2019</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Modals -->
+
+ <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Five feet apart </h2>
+                <p class="item-intro text-muted">Genre:Romantis</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/fivefeetapart2.jpg" alt="">
+                <p>Stella Grant adalah pasien cystic fibrosis (CF) yang secara aktif menggunakan media sosial untuk mengatasi penyakitnya dan mencoba hidup normal. Dia bertemu pasien CF lain, Will Newman, yang berada di rumah sakit untuk percobaan pengobatan, dalam upaya untuk menyingkirkan infeksi bakteri ( B. cepacia ) yang dia miliki di paru-parunya.Pasien CF dijaga ketat terpisah setidaknya enam kaki untuk mengurangi risiko infeksi silang, karena tertular infeksi bakteri dari pasien CF lainnya dapat mengancam jiwa</p>
+                <ul class="list-inline">
+                  <li>pemeran : Haley Lu Richardson dan Cole Sprouse </li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Cek Toko sebelah </h2>
+                <p class="item-intro text-muted">Komedi</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/cektokosebelah2.jpg" alt="">
+                <p>ERWIN  menikmati hidupnya dengan karir gemilang di usia muda, dan kekasih cantik yang tak kalah sukses, Natalie  Tapi semua jadi pelik saat Koh Afuk  yang kesehatannya makin memburuk, ingin mewariskan toko sembakonya kepada Erwin, anak kesayangannya. Sementara itu, Yohan  kakak Erwin, naik pitam karena dilangkahi. Sebagai anak sulung yang merasa lebih perhatian pada kedua orang tuanya, Yohan yakin ia dan istrinya, Ayu , adalah yang paling berhak meneruskan toko tersebut. Sayangnya, Koh Afuk sulit mempercayai Yohan yang selalu memberontak</p>
+                <ul class="list-inline">
+                  <li>pemain :Ernest Prakasa,Gisella Anastasia,Chew Kin Wah,Dion Wiyoko,Adinia Wirasti </li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Train to Busan </h2>
+                <p class="item-intro text-muted">Horor </p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/traintobusan2.jpg" alt="">
+                <p>Awal cerita Train to Busan adalah ketika sebuah truk pembawa barang diizinkan melewati sebuah daerah yang mengalami kebocoran. Ketika itu, pengendara truk tidak melihat seekor rusa melintas di tengah jalan sehingga rusa yang mati itu berubah menjadi rusa zombie. Seok-Woo, seorang manajer keuangan sebuah perusahaan, berangkat ke Busan bersama anaknya, Su-an, untuk bertemu dengan ibunya sebagai hadiah ulang tahun anak perempuannya. Seok-Woo, yang baru bercerai dengan istrinya, berangkat dengan KTX (kereta api cepat Korea) dari Seoul bersama para penumpang lain. Ketika kereta akan berangkat, seorang wanita dengan luka di kakinya masuk ke dalam kereta tersebut. Wanita tersebut mencoba menyerang pramugari kereta yang ingin mencoba menolongnya. Sejak itu, wanita zombie itu telah menginfeksi sejumlah besar penumpang keret</p>
+                <ul class="list-inline">
+                  <li>pemain :  Gong Yoo, Jung Yu-mi dan Ma Dong-seok.</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Harry Poter</h2>
+                <p class="item-intro text-muted">Fantacy </p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/harrypoter2.jpg" alt="">
+                <p>Film Harry Poter adalah Film yang diangkat dari Novel,dimana mengisahkan tentang Harry Potter, seorang anak laki-laki yatim piatu yang pada usia sebelas tahun mengetahui bahwa ia adalah seorang penyihir, hidup dalam dunia biasa nonsihir, atau Muggle.Kemampuan sihirnya adalah bawaan dan ia diundang untuk menghadiri sekolah yang mengajarkan tentang keterampilan dan pengetahuan sihir. Harry kemudian menjadi pelajar di Sekolah Sihir Hogwarts, dan di sana sebagian besar kisah novel berlangsung. Di Hogwarts, Harry melalui masa-masa remajanya, ia belajar untuk mengatasi berbagai masalah yang dihadapinya: sihir, sosial dan emosional, termasuk permasalahan remaja biasa seperti cinta, persahabatan, dan ujian sekolah, serta ujian terbesar untuk mempersiapkannya dalam menghadapi konfrontasi yang ada di depannya.</p>
+                <ul class="list-inline">
+                  <li>pemain : Daniel Radcliffe,Emma Watson, Rupert Grint</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Dilan 1990</h2>
+                <p class="item-intro text-muted">Romantis</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/dilan2.jpg" alt="">
+                <p>Milea bertemu dengan Dilan  di sebuah SMA di Bandung. Itu adalah tahun 1990, saat Milea pindah dari Jakarta ke Bandung. Perkenalan yang tidak biasa kemudian membawa Milea mulai mengenal keunikan Dilan lebih jauh. Dilan yang pintar, baik hati dan romantis... semua dengan caranya sendiri. Cara Dilan mendekati Milea tidak sama dengan teman-teman lelakinya yang lain, bahkan Beni, pacar Milea di Jakarta. Bahkan cara berbicara Dilan yang terdengar kaku, lambat laun justru membuat Milea kerap merindukannya jika sehari saja ia tak mendengar suara itu. Perjalanan hubungan mereka tak selalu mulus. Beni, gank motor, tawuran, Anhar, Kang Adi, semua mewarnai perjalanan itu. Dan Dilan... dengan caranya sendiri...selalu bisa membuat Milea percaya ia bisa tiba di tujuan dengan selamat. Tujuan dari perjalanan ini. Perjalanan mereka berdua. Katanya, dunia SMA adalah dunia paling indah. Dunia Milea dan Dilan satu tingkat lebih indah daripada itu</p>
+                <ul class="list-inline">
+                  <li>pemain : Vanesha Prescilla,Iqbaal Ramadhan </li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Miracle in cell no.7 </h2>
+                <p class="item-intro text-muted">Drama,Komedi</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/miracle71.jpg" alt="">
+                <p>Kisah kehidupan seorang ayah cacat mental yang memiliki seorang putri cerdas berusia 6 tahun. Mereka berdua dipisahkan akibat tuduhan pembunuhan, yang berakhir dengan hukuman mati terhadap sang ayah.!</p>
+                <ul class="list-inline">
+                  <li>Pemain : Ryu Seung-ryong, Kal So-won dan Park Shin-hye</li>
+                   <audio controls>
+                    <source src="idol.mp3" type="audio/mpeg">
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
